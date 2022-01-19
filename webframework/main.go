@@ -6,14 +6,14 @@ import (
 )
 
 func main() {
-	r := framework.New()
+	r := framework.Default()
 	r.GET("/index", func(c *framework.Context) {
 		c.HTML(http.StatusOK, "<h1>Index Page</h1>")
 	})
 	v1 := r.Group("/v1")
 	{
 		v1.GET("/", func(c *framework.Context) {
-			c.HTML(http.StatusOK, "<h1>Hello Gee</h1>")
+			c.HTML(http.StatusOK, "<h1>Hello World</h1>")
 		})
 
 		v1.GET("/hello", func(c *framework.Context) {
