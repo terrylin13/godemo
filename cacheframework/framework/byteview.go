@@ -1,10 +1,10 @@
-package cacheframework
+package framework
 
 type ByteView struct {
 	b []byte
 }
 
-func (v *ByteView) Len() int {
+func (v ByteView) Len() int {
 	return len(v.b)
 }
 

@@ -1,9 +1,8 @@
-package cacheframework
+package framework
 
 import (
+	"lru"
 	"sync"
-
-	"github.com/terrylin13/godemo/cacheframework/lru"
 )
 
 type cache struct {
