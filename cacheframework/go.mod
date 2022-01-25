@@ -6,6 +6,11 @@ replace framework => ./framework
 
 replace lru => ./framework/lru
 
+replace consistenthash => ./framework/consistenthash
+
 require framework v0.0.0-00010101000000-000000000000
 
-require lru v0.0.0-00010101000000-000000000000 // indirect
+require (
+	consistenthash v0.0.0-00010101000000-000000000000 // indirect
+	lru v0.0.0-00010101000000-000000000000 // indirect
+)
